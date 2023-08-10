@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chunggington</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<title>Check Out.</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: honeydew;
+    }
+
+    header {
+        background-color: #f2f2f2;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+
+    /* make the submit button green so more aesthatic */
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+    /* to make the side pointy dissapeer */   
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type="number"]{
+        -moz-appearance: textfield;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="row-xs-4 row-md-4">
+                <header>
+                    <h1>Thank you for checking out with us at Chuggington!</h1>
+                </header>
+
+                <h2>Credit / Debit Card Checkout</h2>
+                <form action="PS_L11_HomePage.html">
+                    <!-- type text is to get the user input  -->
+                    <!-- id and name is attributes -->
+                    <label for="Full Name">Full Name in Caps:</label><br>
+                    <!-- ensure that only upper case capital letter can only be typed in-->
+                    <input type=""   style="text-transform:uppercase" size=80 id="fname" name="fname" value=""><br>
+                    <label for="16 Digit Card Number">16 Digit Card number:</label><br>
+                    <!-- ensuring only 16 digits can be used and only integer type can be entered-->
+                    <input type="number"   pattern = "\d*" id="cardNumber" size=80 name="cardNumber"  maxlength="16"  ><br>
+                    <label for="CVV number">3 digit CVV number:</label><br>
+                    <!-- value is user input  -->
+                    <input type="number" id="cvv" name="cvv" value=""  ><br><br>
+
+            </div>
+            <div class="row-xs-4 row-md-4"></div>
+            <header>
+                <h2>Billing Address</h2>
+            </header>
+            <label for="Firstname">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" value=""><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" value=""><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" value=""><br>
+            <label for="unitNumber">Unit Number:</label><br>
+            <input type="number" id="unitNumber" name="unitNumber" value=""><br>
+            <label for="postalCode">Postal Code:</label><br>
+            <input type="number" id="postalCode" name="postalCode" value=""><br>
+            <label for="phoneNumber">Phone Number:</label><br>
+            <input type="number" id="phoneNumber" name="phoneNumber" value=""><br>
+            <p></p>
+            <input type="submit" value="Submit">
+            </form>
+</body>
+</div>
+</div>
+</div>
+
+</html>
+
